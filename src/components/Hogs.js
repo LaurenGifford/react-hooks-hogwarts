@@ -9,11 +9,11 @@ function Hogs({hogs, images}) {
             greased={hog.greased} 
             weight={hog.weight}
             medal={hog['highest medal achieved']}
-            // img={images.has(`${hog.name}`)}
+            img={images[hog.name]}
         />
     ))
 
-    return (
+    return ( 
         <div>
             {displayHogs}
         </div>

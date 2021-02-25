@@ -2,6 +2,7 @@ import React, {useState} from "react"
 
 function Hog({name, img, specialty, greased, weight, medal}) {
     const [show, setShow] = useState(false)
+    console.log(img)
 
     return (
         <div onClick={() => setShow(!show)}>

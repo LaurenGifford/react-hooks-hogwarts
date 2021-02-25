@@ -19,7 +19,7 @@ import truffle_shuffle from "../assets/truffle_shuffle.jpg";
 const images = {
   Babe: babe,
   Porkchop: porkchop,
-  cherub: cherub,
+  Cherub: cherub,
   'Augustus Gloop': augustus_gloop,
   Bailey: bailey,
   'Piggy smalls': piggy_smalls,
