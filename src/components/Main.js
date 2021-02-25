@@ -28,8 +28,8 @@ function Main({hogs, images}) {
             return hog2.weight - hog1.weight})
         }
         console.log(sortedHogs)
-        // setCurrentHogs(...sortedHogs)
-        setCurrentHogs((currentHogs) => currentHogs = sortedHogs)
+        setCurrentHogs([...sortedHogs])
+        // setCurrentHogs((currentHogs) => currentHogs = sortedHogs)
         console.log(currentHogs)
     }
 
