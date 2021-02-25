@@ -1,6 +1,6 @@
 import Hog from "./Hog"
 
-function Hogs({hogs, images}) {
+function Hogs({hogs, images, onHideHog}) {
 
     const displayHogs = hogs.map(hog => (
         <Hog 
@@ -10,11 +10,14 @@ function Hogs({hogs, images}) {
             weight={hog.weight}
             medal={hog['highest medal achieved']}
             img={images[hog.name]}
+            onHideHog={onHideHog}
+            key={hog.name}
+            id={hog.name}
         />
     ))
 
     return ( 
-        <div>
+        <div className="ui grid container ">
             {displayHogs}
         </div>
     )
